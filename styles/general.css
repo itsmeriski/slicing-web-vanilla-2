@@ -1,0 +1,26 @@
+:root {
+  --indigo-900: #252641;
+  --indigo-500: #2f327d;
+  --indigo-200: #545567;
+  --indigo-100: #696984;
+  --orange-500: #f48c06;
+  --yellow-400: #f4b767;
+  --grey-700: #464646;
+  --grey-500: #6c6c6c;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
+}
+
+#container {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+#container > main {
+  flex: 1 100%;
+}
