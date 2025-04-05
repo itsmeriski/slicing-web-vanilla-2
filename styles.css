@@ -7,12 +7,21 @@
   --yellow-400: #f4b767;
   --grey-700: #464646;
   --grey-500: #6c6c6c;
+
+  --witdh-base: 1300px;
 }
 
 html,
 body {
   font-family: "Poppins", sans-serif;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  font-style: normal;
   /* font-family: "Nunito Sans", sans-serif; */
+}
+
+button[type="button"] {
+  cursor: pointer;
 }
 
 #container {
@@ -22,5 +31,54 @@ body {
 }
 
 #container > main {
-  flex: 1 100%;
+  flex: 1;
+}
+
+.header {
+  width: var(--witdh-base);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 80px;
+}
+
+.header__logo {
+  height: 84px;
+}
+
+.header__lists {
+  list-style-type: none;
+  display: flex;
+  column-gap: 80px;
+}
+
+.header__anchor {
+  color: var(--indigo-900);
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.header__btn-group {
+  display: flex;
+  column-gap: 34px;
+}
+
+.header__btn {
+  height: 60px;
+  width: 160px;
+  border-radius: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+}
+
+.header__btn-primary {
+  background: white;
+  color: var(--grey-500);
+}
+
+.header__btn--secondary {
+  background: var(--orange-500);
+  color: white;
 }
