@@ -1,3 +1,9 @@
+/* 
+  poppins
+  - regular
+  - medium
+*/
+
 :root {
   --indigo-900: #252641;
   --indigo-500: #2f327d;
@@ -8,7 +14,9 @@
   --grey-700: #464646;
   --grey-500: #6c6c6c;
 
-  --witdh-base: 1300px;
+  --bgc-header-hero: #FFF3E4;
+
+  --witdh-base: 1212px;
 }
 
 html,
@@ -17,11 +25,8 @@ body {
   letter-spacing: 0.4px;
   font-weight: 400;
   font-style: normal;
+  color: var(--indigo-900);
   /* font-family: "Nunito Sans", sans-serif; */
-}
-
-button[type="button"] {
-  cursor: pointer;
 }
 
 #container {
@@ -35,50 +40,57 @@ button[type="button"] {
 }
 
 .header {
-  width: var(--witdh-base);
+  background: var(--bgc-header-hero);
+}
+
+.header__wrapper {
   margin-inline: auto;
+  width: var(--witdh-base);
   display: flex;
   align-items: center;
-  column-gap: 80px;
+  column-gap: 40px;
+  margin-block: 40px;
 }
 
 .header__logo {
-  height: 84px;
+  height: 50px;
+}
+
+.header__navbar {
+  flex: 1;
 }
 
 .header__lists {
   list-style-type: none;
   display: flex;
-  column-gap: 80px;
+  justify-content: flex-end;
+  column-gap: 40px;
 }
 
 .header__anchor {
-  color: var(--indigo-900);
-  font-size: 22px;
   text-decoration: none;
+  color: var(--indigo-900);
 }
 
 .header__btn-group {
   display: flex;
-  column-gap: 34px;
+  column-gap: 20px;
 }
 
 .header__btn {
-  height: 60px;
+  border-radius: 20px;
   width: 160px;
-  border-radius: 30px;
-  font-size: 22px;
-  font-weight: 500;
-  outline: none;
+  height: 40px;
   border: none;
+  cursor: pointer;
+  font-weight: 500;
 }
 
-.header__btn-primary {
-  background: white;
-  color: var(--grey-500);
+.header__btn--primary {
+  background: var(--orange-500);
+  color: white;
 }
 
 .header__btn--secondary {
-  background: var(--orange-500);
-  color: white;
+  background: white;
 }
