@@ -182,3 +182,30 @@ body {
   left: 50%;
   transform: translate(-30%, -50%);
 }
+
+.companies {
+  width: var(--witdh-base);
+  margin-inline: auto;
+  margin-block: 80px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.companies__title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 160%;
+  letter-spacing: 0.4px;
+}
+
+.companies__brand-logo {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.companies__brand-logo img {
+  height: 32px;
+}
