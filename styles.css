@@ -15,10 +15,17 @@
   --yellow-400: #f4b767;
   --grey-700: #464646;
   --grey-500: #6c6c6c;
+  --blue-500: #5B72EE;
+  --cyan-500: #29B9E7;
 
   --bgc-header-hero: #FFF3E4;
 
   --witdh-base: 1212px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 html,
@@ -208,4 +215,100 @@ body {
 
 .companies__brand-logo img {
   height: 32px;
+}
+
+.about {
+  width: var(--witdh-base);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 100px;
+}
+
+.about__title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--indigo-500);
+  line-height: 180%;
+  margin-bottom: 16px;
+}
+
+.about__title--highlight {
+  color: var(--orange-500);
+}
+
+.about__paragraph {
+  line-height: 180%;
+  text-align: center;
+  width: 65%;
+  margin-inline: auto;
+  font-size: 18px;
+  color: var(--indigo-100);
+}
+
+.about__cards {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.about__card {
+  flex: 0 0 320px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px;
+  padding-top: 0;
+  border-radius: 20px;
+  box-shadow: 0 10px 60px hsla(235, 51%, 31%, 8%);
+}
+
+.about__card-title {
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--indigo-500);
+}
+
+.about__card-paragraph {
+  text-align: center;
+  font-size: 14px;
+  color: var(--indigo-100);
+  line-height: 180%;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.about__card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  display: flex;
+  position: relative;
+  top: -40px;
+  box-shadow: 0 10px 40px hsl(235, 43%, 37%, 6%);
+}
+
+.about__card:nth-child(1) .about__card-icon {
+  background: var(--blue-500);
+}
+
+.about__card:nth-child(2) .about__card-icon {
+  background: var(--orange-500);
+}
+
+.about__card:nth-child(3) .about__card-icon {
+  background: var(--cyan-500);
+}
+
+.about__card-icon img {
+  margin: auto;
+  transform: scale(0.7);
 }
