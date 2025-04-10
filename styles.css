@@ -4,6 +4,9 @@
   - medium
   - semibold
   - bold
+
+  Nunito Sans
+  - regular
 */
 
 :root {
@@ -202,9 +205,10 @@ body {
 
 .companies__title {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 160%;
   letter-spacing: 0.4px;
+  margin-bottom: 16px;
 }
 
 .companies__brand-logo {
@@ -220,6 +224,7 @@ body {
 .about {
   width: var(--witdh-base);
   margin-inline: auto;
+  margin-bottom: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,6 +289,7 @@ body {
   line-height: 180%;
   width: 90%;
   margin-inline: auto;
+  text-wrap: balance;
 }
 
 .about__card-icon {
@@ -311,4 +317,151 @@ body {
 .about__card-icon img {
   margin: auto;
   transform: scale(0.7);
+}
+
+.skilline {
+  width: var(--witdh-base);
+  margin-bottom: 140px;
+  margin-inline: auto;
+}
+
+.skilline__title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--indigo-500);
+  line-height: 180%;
+  margin-bottom: 16px;
+}
+
+.skilline__title--highlight {
+  color: var(--orange-500);
+}
+
+.skilline__paragraph {
+  width: 80%;
+  margin-inline: auto;
+  margin-bottom: 60px;
+  text-align: center;
+  text-wrap: balance;
+  line-height: 180%;
+  font-size: 18px;
+  color: var(--indigo-100);
+}
+
+.skilline__wrapper-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 140px;
+}
+
+.skilline__cards {
+  display: flex;
+  column-gap: 60px;
+}
+
+.skilline__card {
+  width: 500px;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.skilline__card::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  background: linear-gradient(to bottom, hsla(234, 48%, 17%, 40%), hsla(234, 48%, 17%, 60%));
+  inset: 0;
+}
+
+.skilline__card div {
+  z-index: 2;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.skilline__card-title {
+  font-weight: 600;
+  font-size: 26px;
+  color: white;
+}
+
+.skilline__card-btn {
+  cursor: pointer;
+  height: 48px;
+  padding-inline: 20px;
+  border-radius: 24px;
+  border: 1px solid white;
+  background: transparent;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  transition-property: border, background;
+  will-change: border, background;
+}
+
+.skilline__card-btn:hover {
+  background: hsla(194, 86%, 54%, 90%);
+  border: 1px solid transparent;
+}
+
+.skilline__card-btn {
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.skilline__card-img {
+  height: 100%;
+}
+
+.skilline__wrapper-2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.skilline__wrapper-2::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  background: var(--yellow-400);
+}
+
+.skilline__wrapper-2 :is(.skilline__title, .skilline__paragraph) {
+  text-align: start;
+  width: 100%;
+}
+
+.skilline__wrapper-2 .skilline__title {
+  position: relative;
+}
+
+.skilline__wrapper-2 .skilline__paragraph {
+  width: 85%;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.skilline__illustration{
+  height: 400px;
+}
+
+.skilline__card-anchor {
+  all: unset;
+  color: var(--indigo-100);
+  text-decoration: underline;
+  cursor: pointer;
+  line-height: 180%;
 }
